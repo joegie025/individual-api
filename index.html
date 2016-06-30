@@ -6,29 +6,27 @@
         <title>API ~ Jugs</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="css/form_block.css" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     </head>
     <body>
 
         <form id="msform">
-            <ul id="progressbar">
-                <li class="active">Account Setup</li>
-                <li>Social Profiles</li>
-                <li>Personal Details</li>
-            </ul>
-            <fieldset>
-                <h2 class="fs-title">Create your account</h2>
-                <h3 class="fs-subtitle">This is step 1</h3>
-                <input type="text" class="form-control" name="email" placeholder="Email" />
-                <input type="password" class="form-control" name="pass" placeholder="Password" />
-                <input type="password" class="form-control" name="cpass" placeholder="Confirm Password" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-
+            <section id="wrapper">
+                <article>
+                </article>
+            </section>
+          <fieldset>
+          <br/>
+            <h2 class="fs-title">Click the button to get your coordinates.</h2>
+            <p id="long-la"></p>
+            <input type="button" name="next" class="next action-button" value="Locate ME" onclick="getLocation()" />
+          </fieldset>
+          
         </form>
-
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-        <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/msform.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script> 
     </body>
 </html>
